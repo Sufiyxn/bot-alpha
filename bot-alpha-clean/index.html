@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bot Alpha</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Bot Alpha</h1>
+    <div id="chatbox" class="chatbox"></div>
+
+    <div class="controls">
+      <input type="text" id="userInput" placeholder="Type a message..." autofocus />
+      <button onclick="sendMessage()">Send</button>
+      <button onclick="toggleVoice()">Voice</button>
+    </div>
+
+    <label for="voiceSelect">Choose Voice:</label>
+    <select id="voiceSelect">
+      <option value="">Loading voices...</option>
+    </select>
+
+    <div id="chat-history" class="history">
+      <h3>Recent Messages</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="js/bot.js"></script>
+</body>
+</html>
